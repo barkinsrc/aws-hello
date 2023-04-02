@@ -1,0 +1,9 @@
+---
+-name: Package Setup and Update
+ hosts: all
+ tasks:
+ - name: Package setup
+    shell: yum install –y telnet sysstat
+
+ - name: Update
+    shell: yum update
